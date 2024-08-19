@@ -1,0 +1,26 @@
+name: ci
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          toolchain: 1.75.0
+          components: clippy, rustfmt
+      # Cargo build cache
+      - name: Cache
+        uses: Swatinem/rust-cache@v2
+      - run: cargo build --locked
+      - run: cargo fmt --check
+      - run: cargo clippy -- -D warnings
+      - run: cargo test -- --nocapture
