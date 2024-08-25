@@ -68,6 +68,8 @@ pub fn deserialize_dynamic_slippage_config() -> Result<(DefaultSlippage, Vec<Cat
 
 #[cfg(test)]
 mod tests {
+    use std::collections::HashSet;
+
     use super::*;
 
     #[test]
@@ -75,8 +77,17 @@ mod tests {
         let (_, categories) = deserialize_dynamic_slippage_config().unwrap();
 
         assert_eq!(
-            categories.into_iter().map(|c| c.name).collect::<Vec<_>>(),
+            categories.iter().map(|c| &c.name).collect::<Vec<_>>(),
             vec!["stable", "lst", "bluechip", "verified"]
         );
+
+        // Ensure no duplicated mints, otherwise the config behaviour will be confusing
+        let mints = categories
+            .iter()
+            .map(|c| c.mints.iter())
+            .flatten()
+            .collect::<Vec<_>>();
+        let set: HashSet<&Pubkey> = HashSet::from_iter(mints.clone());
+        assert_eq!(mints.len(), set.len());
     }
 }
