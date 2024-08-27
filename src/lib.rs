@@ -17,6 +17,7 @@ pub struct Category {
 }
 
 #[derive(Deserialize)]
+#[serde(rename_all = "camelCase")]
 struct CategoryOriginal {
     name: String,
     range: Range,
@@ -29,11 +30,13 @@ struct CategoryOriginal {
 pub struct DeserializablePubkey(#[serde(with = "field_as_string")] pub Pubkey);
 
 #[derive(Deserialize)]
+#[serde(rename_all = "camelCase")]
 pub struct DefaultSlippage {
     pub range: Range,
 }
 
 #[derive(Deserialize)]
+#[serde(rename_all = "camelCase")]
 struct DynamicSlippageCategories {
     categories: Vec<CategoryOriginal>,
     default: DefaultSlippage,
@@ -75,8 +78,15 @@ mod tests {
         let (_, categories) = deserialize_dynamic_slippage_config().unwrap();
 
         assert_eq!(
-            categories.into_iter().map(|c| c.name).collect::<Vec<_>>(),
+            categories.iter().map(|c| &c.name).collect::<Vec<_>>(),
             vec!["stable", "lst", "bluechip", "verified"]
         );
+
+        assert!(categories
+            .iter()
+            .find(|c| c.name == "lst")
+            .unwrap()
+            .pair_range
+            .is_some())
     }
 }
