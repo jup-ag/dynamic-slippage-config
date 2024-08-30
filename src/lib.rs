@@ -71,6 +71,8 @@ pub fn deserialize_dynamic_slippage_config() -> Result<(DefaultSlippage, Vec<Cat
 
 #[cfg(test)]
 mod tests {
+    use itertools::Itertools;
+
     use super::*;
 
     #[test]
@@ -81,12 +83,20 @@ mod tests {
             categories.iter().map(|c| &c.name).collect::<Vec<_>>(),
             vec!["stable", "lst", "bluechip", "verified"]
         );
-
         assert!(categories
             .iter()
             .find(|c| c.name == "lst")
             .unwrap()
             .pair_range
-            .is_some())
+            .is_some());
+
+        // Ensure no duplicated mints, otherwise the config behaviour will be confusing
+        let duplicates = categories
+            .iter()
+            .flat_map(|c| &c.mints)
+            .duplicates()
+            .collect::<Vec<&Pubkey>>();
+
+        assert_eq!(duplicates, Vec::<&Pubkey>::new());
     }
 }

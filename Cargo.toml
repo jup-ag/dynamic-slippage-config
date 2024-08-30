@@ -6,6 +6,7 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+itertools = "0.13.0"
 serde = "1.0.208"
 serde_json = "1.0.125"
 solana-program = "2.0.6"
