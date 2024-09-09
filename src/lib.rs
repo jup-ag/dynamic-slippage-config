@@ -38,7 +38,7 @@ fn default_amplification_ratio() -> Decimal {
 #[derive(Deserialize)]
 #[serde(rename_all = "camelCase")]
 
-pub struct DefaultAutoSlippage {
+pub struct Default {
     #[serde(default = "default_amplification_ratio")]
     pub amplification_ratio: Decimal,
     pub range: Range,
@@ -48,12 +48,12 @@ pub struct DefaultAutoSlippage {
 #[serde(rename_all = "camelCase")]
 struct DynamicSlippageConfigOriginal {
     categories: Vec<CategoryOriginal>,
-    default: DefaultAutoSlippage,
+    default: Default,
 }
 
 pub struct DynamicSlippageConfig {
     pub categories: Vec<Category>,
-    pub default: DefaultAutoSlippage,
+    pub default: Default,
 }
 
 fn deserialize_dynamic_slippage_config(
