@@ -7,6 +7,8 @@ edition = "2021"
 
 [dependencies]
 itertools = "0.13.0"
+rust_decimal = "1.36.0"
+rust_decimal_macros = "1.36.0"
 serde = "1.0.208"
 serde_json = "1.0.125"
 solana-program = "2.0.6"

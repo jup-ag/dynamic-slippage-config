@@ -179,6 +179,7 @@
     }
   ],
   "default": {
+    "amplificatioRatio": 1.5,
     "range": {
       "min": 30,
       "max": 300
