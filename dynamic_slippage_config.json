@@ -24,7 +24,7 @@
     {
       "name": "lst",
       "range": {
-        "min": 10,
+        "min": 20,
         "max": 50
       },
       "pairRange": {
@@ -111,7 +111,7 @@
     {
       "name": "bluechip",
       "range": {
-        "min": 10,
+        "min": 25,
         "max": 50
       },
       "mints": [
@@ -172,7 +172,7 @@
     {
       "name": "verified",
       "range": {
-        "min": 30,
+        "min": 50,
         "max": 300
       },
       "mints": []
@@ -181,7 +181,7 @@
   "default": {
     "amplificatioRatio": 1.5,
     "range": {
-      "min": 30,
+      "min": 50,
       "max": 300
     }
   }
