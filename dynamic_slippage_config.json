@@ -25,7 +25,7 @@
       "name": "lst",
       "range": {
         "min": 20,
-        "max": 50
+        "max": 100
       },
       "pairRange": {
         "min": 5,
@@ -112,7 +112,7 @@
       "name": "bluechip",
       "range": {
         "min": 25,
-        "max": 50
+        "max": 100
       },
       "mints": [
         "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
