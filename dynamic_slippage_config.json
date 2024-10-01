@@ -24,12 +24,12 @@
     {
       "name": "lst",
       "range": {
-        "min": 20,
-        "max": 100
+        "min": 50,
+        "max": 150
       },
       "pairRange": {
         "min": 5,
-        "max": 20
+        "max": 30
       },
       "mints": [
         "So11111111111111111111111111111111111111112",
@@ -111,8 +111,8 @@
     {
       "name": "bluechip",
       "range": {
-        "min": 25,
-        "max": 100
+        "min": 50,
+        "max": 150
       },
       "mints": [
         "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
@@ -172,16 +172,16 @@
     {
       "name": "verified",
       "range": {
-        "min": 50,
+        "min": 75,
         "max": 300
       },
       "mints": []
     }
   ],
   "default": {
-    "amplificatioRatio": 1.5,
+    "amplificatioRatio": 1.75,
     "range": {
-      "min": 50,
+      "min": 75,
       "max": 300
     }
   }
