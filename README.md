@@ -12,7 +12,7 @@ This repository contains the `dynamic_slippage_config_json` that is used to esti
 **In the backend**
 If `dynamicSlippage: true` is passed to the `/swap` endpoint, the backend will
 1. Simulate a swap based on the exact quote.
-2. Use the `quoteAmount` and `simulatedAmount` to calculate a `simulatedSlippage`.
+2. Use the `quotedAmount` and `simulatedAmount` to calculate a `simulatedSlippage`.
 3. Use the `amplificationRatio` and multiply it to the `simulatedSlippage`.
 4. With the latest `simulatedSlippage` value, we will apply some math to it.
   - Depending on the input/output tokens' categories, we will use the worse of category between the 2 tokens
