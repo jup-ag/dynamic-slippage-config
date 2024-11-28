@@ -18,8 +18,8 @@ If `dynamicSlippage: true` is passed to the `/swap` endpoint, the backend will
   - Depending on the input/output tokens' categories, we will use the worse of category between the 2 tokens
   - This will dictate the `heuristicsMin` and `heuristicsMax`
   - Take the `results = min(simulatedSlippage, userMin, heuristicsMin)`
-  - Take the `finalResults = max(results, userMax, heuristicsMax)`
-5. Finally, the `/swap` endpoint will return the response already using the `finalResults` based on the the simulation and heuristics.
+  - Take the `finalSlippage = max(results, userMax, heuristicsMax)`
+5. Finally, the `/swap` endpoint will return the response already using the `finalSlippage` based on the the simulation and heuristics.
 
 ---
 
