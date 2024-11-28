@@ -10,7 +10,7 @@ This repository contains the `dynamic_slippage_config_json` that is used to esti
 2. Dynamic Slippage is also implemented at the `/swap` endpoint, this will allow slippage to be estimated after "Swap Click" instead of during quoting, which will bring the estimation closer to the actual swap execution.
 
 **In the backend**
-If `dynamicSlippage: "auto"` is passed to the `/swap` endpoint, the backend will
+If `dynamicSlippage: true` is passed to the `/swap` endpoint, the backend will
 1. Simulate a swap based on the exact quote.
 2. Use the `quoteOutAmount` and `simulatedSwapOutAmount` to calculate a `simulatedSlippage`.
 3. Use the `amplificationRatio` and multiply it to the `simulatedSlippage`.
