@@ -3,7 +3,7 @@ This repository contains the `dynamic_slippage_config_json` that is used to esti
 
 ### Slippage Issues
 1. Slippage threshold is not a one-size-fit-all solution -- Swapping different types of tokens require users to change slippage thresholds to cater to specific profiles.
-2. Slippage estimation can be measure in different ways -- one of the many factors is time, especially when users can take time to accept a quote/sign the transaction.
+2. Many different factors can contribute to slippage -- one of them is time, especially when users can take time to accept a quote/sign the transaction.
 
 ### How does Dynamic Slippage help
 1. Based on the categories of the tokens being traded, Dynamic Slippage will use its category min max to calculate the optimal slippage.
