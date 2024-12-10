@@ -139,7 +139,7 @@
     }
   ],
   "default": {
-    "amplificatioRatio": 2,
+    "amplificationRatio": 2,
     "range": {
       "min": 80,
       "max": 500
