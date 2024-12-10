@@ -1,6 +1,5 @@
 use range::Range;
 use rust_decimal::Decimal;
-use rust_decimal_macros::dec;
 use serde::Deserialize;
 use serde_json::{self, error::Result};
 use solana_program::pubkey::Pubkey;
@@ -31,15 +30,9 @@ struct CategoryOriginal {
 #[serde(rename_all = "camelCase")]
 pub struct DeserializablePubkey(#[serde(with = "field_as_string")] pub Pubkey);
 
-fn default_amplification_ratio() -> Decimal {
-    dec!(1.5)
-}
-
 #[derive(Deserialize)]
 #[serde(rename_all = "camelCase")]
-
 pub struct DynamicSlippageDefault {
-    #[serde(default = "default_amplification_ratio")]
     pub amplification_ratio: Decimal,
     pub range: Range,
 }
