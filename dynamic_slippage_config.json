@@ -3,7 +3,7 @@
     {
       "name": "stable",
       "range": {
-        "min": 20,
+        "min": 5,
         "max": 80
       },
       "mints": [
