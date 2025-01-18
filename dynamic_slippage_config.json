@@ -4,7 +4,7 @@
       "name": "stable",
       "range": {
         "min": 5,
-        "max": 80
+        "max": 100
       },
       "mints": [
         "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
@@ -26,11 +26,11 @@
       "name": "lst",
       "range": {
         "min": 50,
-        "max": 100
+        "max": 300
       },
       "pairRange": {
         "min": 20,
-        "max": 80
+        "max": 300
       },
       "mints": [
         "So11111111111111111111111111111111111111112",
