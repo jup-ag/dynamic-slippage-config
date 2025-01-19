@@ -4,7 +4,7 @@
       "name": "stable",
       "range": {
         "min": 20,
-        "max": 200
+        "max": 300
       },
       "mints": [
         "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
@@ -25,11 +25,11 @@
       "name": "lst",
       "range": {
         "min": 100,
-        "max": 300
+        "max": 500
       },
       "pairRange": {
         "min": 50,
-        "max": 300
+        "max": 500
       },
       "mints": [
         "So11111111111111111111111111111111111111112",
@@ -113,7 +113,7 @@
       "name": "bluechip",
       "range": {
         "min": 100,
-        "max": 300
+        "max": 750
       },
       "mints": [
         "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
