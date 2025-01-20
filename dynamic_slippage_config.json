@@ -3,8 +3,8 @@
     {
       "name": "stable",
       "range": {
-        "min": 20,
-        "max": 200
+        "min": 5,
+        "max": 80
       },
       "mints": [
         "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
@@ -24,12 +24,12 @@
     {
       "name": "lst",
       "range": {
-        "min": 100,
-        "max": 300
+        "min": 50,
+        "max": 100
       },
       "pairRange": {
-        "min": 50,
-        "max": 300
+        "min": 20,
+        "max": 80
       },
       "mints": [
         "So11111111111111111111111111111111111111112",
