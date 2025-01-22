@@ -112,8 +112,8 @@
     {
       "name": "bluechip",
       "range": {
-        "min": 100,
-        "max": 300
+        "min": 200,
+        "max": 400
       },
       "mints": [
         "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
