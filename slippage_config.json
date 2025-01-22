@@ -3,7 +3,7 @@
         {
             "name": "solana",
             "range": {
-                "min": 5,
+                "min": 20,
                 "max": 100
             }
         },
@@ -31,7 +31,7 @@
         {
             "name": "default",
             "range": {
-                "min": 80,
+                "min": 100,
                 "max": 1000
             }
         }
