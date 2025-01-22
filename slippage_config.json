@@ -22,7 +22,7 @@
             }
         },
         {
-            "name": "bluechips",
+            "name": "bluechip",
             "range": {
                 "min": 50,
                 "max": 300
