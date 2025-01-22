@@ -1,0 +1,39 @@
+{
+    "slippage_base_tolerance": [
+        {
+            "name": "solana",
+            "range": {
+                "min": 5,
+                "max": 100
+            }
+        },
+        {
+            "name": "stable",
+            "range": {
+                "min": 5,
+                "max": 80
+            }
+        },
+        {
+            "name": "lst",
+            "range": {
+                "min": 50,
+                "max": 300
+            }
+        },
+        {
+            "name": "bluechips",
+            "range": {
+                "min": 50,
+                "max": 300
+            }
+        },
+        {
+            "name": "default",
+            "range": {
+                "min": 80,
+                "max": 1000
+            }
+        }
+    ]
+}
