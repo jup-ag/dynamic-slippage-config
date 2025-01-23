@@ -126,5 +126,5 @@
             ]
         }
     ],
-    "excluded_tokens": []
+    "excluded_from_intermediate_hop_mints": []
 }
