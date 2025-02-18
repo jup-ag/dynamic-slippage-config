@@ -87,8 +87,9 @@ mod tests {
                 "lst",
                 "bluechip",
                 "default",
-                "pump_new_graduated",
-                "degen"
+                "pump_new_graduate",
+                "degen",
+                "new_token"
             ]
         );
     }
