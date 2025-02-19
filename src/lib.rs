@@ -89,7 +89,8 @@ mod tests {
                 "default",
                 "pump_new_graduate",
                 "degen",
-                "new_token"
+                "new_token",
+                "pump_new_graduate_first_hour"
             ]
         );
     }
