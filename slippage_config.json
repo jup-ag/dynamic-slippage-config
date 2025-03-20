@@ -3,7 +3,7 @@
         {
             "name": "solana",
             "range": {
-                "min": 20,
+                "min": 15,
                 "max": 100
             }
         },
