@@ -90,7 +90,9 @@ mod tests {
                 "pump_new_graduate",
                 "degen",
                 "new_token",
-                "pump_new_graduate_first_hour"
+                "pump_new_graduate_first_hour",
+                "degen_buy",
+                "degen_sell"
             ]
         );
     }
