@@ -62,6 +62,20 @@
                 "min": 1000,
                 "max": 2000
             }
+        },
+        {
+            "name": "degen_buy",
+            "range": {
+                "min": 1000,
+                "max": 2500
+            }
+        },
+        {
+            "name": "degen_sell",
+            "range": {
+                "min": 1000,
+                "max": 5000
+            }
         }
     ]
 }
