@@ -24,7 +24,7 @@
         {
             "name": "bluechip",
             "range": {
-                "min": 50,
+                "min": 5,
                 "max": 300
             }
         },
