@@ -4,14 +4,14 @@
             "name": "solana",
             "range": {
                 "min": 15,
-                "max": 100
+                "max": 80
             }
         },
         {
             "name": "stable",
             "range": {
                 "min": 10,
-                "max": 80
+                "max": 60
             }
         },
         {
